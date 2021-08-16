@@ -19,7 +19,29 @@ namespace ConvertStringToCamelCase
         }
         public static string ToCamelCase(string str)
         {
-            return str;
+            string tempString = "";
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '-')
+                {
+                    tempString += str[i + 1].ToString().ToUpper();
+                    i++;
+                }
+                else if (str[i] == '_')
+                {
+                    tempString += str[i + 1].ToString().ToUpper();
+                    i++;
+                }
+                else
+                {
+                    tempString += str[i];
+                }
+
+
+            }
+         
+            return tempString;
         }
     }
 }
