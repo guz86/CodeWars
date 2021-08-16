@@ -23,16 +23,16 @@ namespace ConvertStringToCamelCase
 
             for (int i = 0; i < str.Length; i++)
             {
-                if (str[i] == '-')
+                if (str[i] == '-' || str[i] == '_')
                 {
                     tempString += str[i + 1].ToString().ToUpper();
                     i++;
                 }
-                else if (str[i] == '_')
-                {
-                    tempString += str[i + 1].ToString().ToUpper();
-                    i++;
-                }
+                //else if (str[i] == '_')
+                //{
+                //    tempString += str[i + 1].ToString().ToUpper();
+                //    i++;
+                //}
                 else
                 {
                     tempString += str[i];
