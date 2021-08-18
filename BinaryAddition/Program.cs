@@ -15,7 +15,7 @@ namespace BinaryAddition
             string binary = Convert.ToString(value, 2);
             return binary;
 
-            // 
+            // return Convert.ToString(a + b, 2);
         }
 
         static void Main(string[] args)
