@@ -21,7 +21,7 @@ namespace CountSmileys
     {
         static void Main(string[] args)
         {
-            string[] smileys = { ":D", ":~)", ";~D", ":)" };
+            string[] smileys = { ": )", ":D"};
             Console.WriteLine(CountSmileys(smileys));
         }
 
@@ -36,7 +36,7 @@ namespace CountSmileys
 
                 if (smile.Length == 2)
                 {
-                    if ((smile[0] == ':' || smile[0] == ';') && (smile[1] == 'D' || (smile[1] == ')')))
+                    if ((smile[0] == ':' || smile[0] == ';' ||  smile[0] == ' ' ) && (smile[1] == 'D' || (smile[1] == ')')))
                     {
                         smileCount += 1;
                     }
@@ -44,7 +44,11 @@ namespace CountSmileys
                 }
                 else if (smile.Length == 3)
                 {
-                    if ((smile[0] == ':' || smile[0] == ';') && (smile[1] == '-' || (smile[1] == '~')) && (smile[2] == 'D' || (smile[2] == ')')))
+                    if (
+                        (smile[0] == ':' || smile[0] == ';' || smile[0] == ' ' ) 
+                        && (smile[1] == '-' || smile[1] == '~' || smile[1] == 'D' || smile[1] == ')' || smile[1] == ' ') 
+                        && (smile[2] == 'D' || smile[2] == ')' || smile[0] == ' ')
+                        )
                     {
                         smileCount += 1;
                     }
