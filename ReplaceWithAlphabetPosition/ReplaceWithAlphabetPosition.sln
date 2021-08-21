@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindTheMissingLetter", "..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryAddition", "..\BinaryAddition\BinaryAddition.csproj", "{54E821B4-2D97-48BF-BA36-2080193996F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountSmileys", "..\CountSmileys\CountSmileys.csproj", "{DE31C6EC-6E99-42AE-BCE9-35E4A010FC11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{54E821B4-2D97-48BF-BA36-2080193996F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54E821B4-2D97-48BF-BA36-2080193996F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54E821B4-2D97-48BF-BA36-2080193996F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE31C6EC-6E99-42AE-BCE9-35E4A010FC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE31C6EC-6E99-42AE-BCE9-35E4A010FC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE31C6EC-6E99-42AE-BCE9-35E4A010FC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE31C6EC-6E99-42AE-BCE9-35E4A010FC11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
