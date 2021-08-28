@@ -29,8 +29,13 @@ namespace SortAndStar
 
             }
             // return startString;
+            string resultString = Convert.ToString( array[elementArray][0]);
+            for (int i = 0; i < array[elementArray].Length - 1; i++)
+            {
+               resultString += "***" + array[elementArray][i+1] ;
+            }
 
-            return array[elementArray];
+            return resultString;
         }
     }
 }
