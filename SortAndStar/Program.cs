@@ -10,7 +10,7 @@ namespace SortAndStar
         // Assert.AreEqual("b***i***t***c***o***i***n", Kata.TwoSort(new [] { "bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"}));
         static void Main(string[] args)
         {
-            string[] testStringArray = { "bitcoin", "take", "aver", "the", "world", "maybe", "who", "knows", "perhaps" };
+            string[] testStringArray = { "bitcoin", "take", "over", "Lhe", "world", "maybe", "who", "knows", "perhaps" };
             Console.WriteLine(SortStar(testStringArray));
         }
         static string SortStar(string[] array)
@@ -21,10 +21,10 @@ namespace SortAndStar
             for (int i = 0; i < array.Length-1; i++)
             {
                 // char next = array[i + 1][0];
-                if (Char.ToUpper(startString) - Char.ToUpper(array[i + 1][0]) >= 1)
+                if (startString - array[i + 1][0] >= 1)
                     {
                      startString = array[i + 1][0];
-                     elementArray = i + 1;
+                    elementArray = i + 1;
                     }
 
             }
