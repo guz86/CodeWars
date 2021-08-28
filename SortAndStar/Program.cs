@@ -13,20 +13,24 @@ namespace SortAndStar
             string[] testStringArray = { "bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps" };
             Console.WriteLine(SortStar(testStringArray));
         }
-        static char SortStar(string[] array)
+        static string SortStar(string[] array)
         {
            
             char startString = array[0][0];
+            int elementArray = 0;
             for (int i = 0; i < array.Length-1; i++)
             {
-                char next =  array[i + 1][0];
-                if (startString - next >= 1)
+                // char next = array[i + 1][0];
+                if (startString - array[i + 1][0] >= 1)
                     {
-                     startString = next;
+                     startString = array[i + 1][0];
+                    elementArray = i + 1;
                     }
 
             }
-            return startString;
+            // return startString;
+
+            return array[elementArray];
         }
     }
 }
