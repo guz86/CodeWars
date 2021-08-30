@@ -14,14 +14,17 @@ namespace ReversedWords
         public static string ReverseWords(string str)
         {
             string[] myArray = str.Split(' ');
-            string resultArray = string.Empty;
+            string result = string.Empty;
 
+            //  Array.Reverse(myArray);
+            // result = string.Join(' ', myArray);
             for (int i = myArray.Length-1; i >= 0; i--)
             {
-                resultArray += myArray[i]+" ";
+                result += myArray[i]+" ";
             }
-            resultArray = resultArray.Trim();
-            return resultArray;
+            result= result.Remove(result.Length-1);
+            //resultArray = resultArray.Trim();
+            return result;
         }
     }
 }
