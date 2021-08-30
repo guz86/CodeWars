@@ -19,7 +19,7 @@ namespace SortAndStar
             char startString = array[0][0];
             int elementArray = 0;
             for (int i = 0; i < array.Length-1; i++)
-            {*
+            {
                 // char next = array[i + 1][0];
                 if (startString - array[i + 1][0] >= 1)
                     {
