@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortAndStar", "..\SortAndSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversedWords", "..\ReversedWords\ReversedWords.csproj", "{F9E18958-9067-4832-B9F8-DCB637FA5404}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturningStrings", "..\ReturningStrings\ReturningStrings\ReturningStrings.csproj", "{6A850A4A-7FE5-4074-B703-4D798A2A0A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbbreviateATwoWordName", "..\AbbreviateATwoWordName\AbbreviateATwoWordName\AbbreviateATwoWordName.csproj", "{FA22D9EA-3203-4A83-9C2D-06509A0ADC6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{F9E18958-9067-4832-B9F8-DCB637FA5404}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9E18958-9067-4832-B9F8-DCB637FA5404}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9E18958-9067-4832-B9F8-DCB637FA5404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A850A4A-7FE5-4074-B703-4D798A2A0A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A850A4A-7FE5-4074-B703-4D798A2A0A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A850A4A-7FE5-4074-B703-4D798A2A0A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A850A4A-7FE5-4074-B703-4D798A2A0A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA22D9EA-3203-4A83-9C2D-06509A0ADC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA22D9EA-3203-4A83-9C2D-06509A0ADC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA22D9EA-3203-4A83-9C2D-06509A0ADC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA22D9EA-3203-4A83-9C2D-06509A0ADC6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
