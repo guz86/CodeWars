@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversedStrings", "..\Rever
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseNumbersSum", "..\HouseNumbersSum\HouseNumbersSum\HouseNumbersSum.csproj", "{0B26EDC3-58C0-4437-8C7C-70942945AA6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheFirstNon-consecutiveNumber", "..\FindTheFirstNon-consecutiveNumber\FindTheFirstNon-consecutiveNumber\FindTheFirstNon-consecutiveNumber.csproj", "{27F602E3-12A9-4711-A2DF-AB113505F27F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StantonMeasure", "..\StantonMeasure\StantonMeasure\StantonMeasure.csproj", "{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{0B26EDC3-58C0-4437-8C7C-70942945AA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B26EDC3-58C0-4437-8C7C-70942945AA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B26EDC3-58C0-4437-8C7C-70942945AA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F602E3-12A9-4711-A2DF-AB113505F27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F602E3-12A9-4711-A2DF-AB113505F27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F602E3-12A9-4711-A2DF-AB113505F27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F602E3-12A9-4711-A2DF-AB113505F27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
