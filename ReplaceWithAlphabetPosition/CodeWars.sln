@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheFirstNon-consecutive
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StantonMeasure", "..\StantonMeasure\StantonMeasure\StantonMeasure.csproj", "{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateAverage", "..\CalculateAverage\CalculateAverage\CalculateAverage.csproj", "{4B5846A3-2C4C-434A-84D4-AFAA35B5CB26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEveryDigit", "..\SquareEveryDigit\SquareEveryDigit\SquareEveryDigit.csproj", "{0FF5260A-E0AA-477F-BADA-063107C1ACDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF81849E-3B31-4B5F-BF16-65A3EBA46C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B5846A3-2C4C-434A-84D4-AFAA35B5CB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B5846A3-2C4C-434A-84D4-AFAA35B5CB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B5846A3-2C4C-434A-84D4-AFAA35B5CB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B5846A3-2C4C-434A-84D4-AFAA35B5CB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF5260A-E0AA-477F-BADA-063107C1ACDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF5260A-E0AA-477F-BADA-063107C1ACDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF5260A-E0AA-477F-BADA-063107C1ACDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF5260A-E0AA-477F-BADA-063107C1ACDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
