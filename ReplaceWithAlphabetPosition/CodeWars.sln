@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateAverage", "..\Calc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEveryDigit", "..\SquareEveryDigit\SquareEveryDigit\SquareEveryDigit.csproj", "{0FF5260A-E0AA-477F-BADA-063107C1ACDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhoLikesIt", "..\WhoLikesIt\WhoLikesIt\WhoLikesIt.csproj", "{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{0FF5260A-E0AA-477F-BADA-063107C1ACDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF5260A-E0AA-477F-BADA-063107C1ACDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF5260A-E0AA-477F-BADA-063107C1ACDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
