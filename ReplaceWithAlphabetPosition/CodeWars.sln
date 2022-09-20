@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEveryDigit", "..\Squa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhoLikesIt", "..\WhoLikesIt\WhoLikesIt\WhoLikesIt.csproj", "{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildAsquare", "..\BuildAsquare\BuildAsquare\BuildAsquare.csproj", "{4A829B15-3655-4D1E-9395-58DA8164FCF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FE89287-EBD5-45D3-B6B9-33F8EC9491FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A829B15-3655-4D1E-9395-58DA8164FCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A829B15-3655-4D1E-9395-58DA8164FCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A829B15-3655-4D1E-9395-58DA8164FCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A829B15-3655-4D1E-9395-58DA8164FCF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
