@@ -13,7 +13,7 @@ namespace CalculateAverage
             Console.WriteLine(FindAverage(array));
         }
 
-        public static double FindAverage(double[] array)
+        private static double FindAverage(double[] array)
         {
             double avarage = 0;
             foreach (var element in array)
