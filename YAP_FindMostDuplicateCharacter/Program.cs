@@ -12,19 +12,35 @@ namespace YAP_FindMostDuplicateCharacter
     class Program
     {
         static void Main(string[] args)
-        {
-            string str = "aaaasssssssddddddffffsssssddddddssssssssssdddddddddddsssaaaaaaa";
-            
+        {  
             //string str = Console.ReadLine();
             // 1
-            Console.WriteLine(MostDuplicateChar(str));
-            
+            Console.WriteLine(MostDuplicateChar("aaaasssssssddddddffffssdddddddddddsssaaaaaaa"));
+            Console.WriteLine(MostDuplicateChar("aab"));
+            Console.WriteLine(MostDuplicateChar("abb"));
+            Console.WriteLine(MostDuplicateChar("bab"));
+            Console.WriteLine(MostDuplicateChar("aba"));
+            Console.WriteLine(MostDuplicateChar("a"));
+            Console.WriteLine(MostDuplicateChar(""));
+            Console.WriteLine("");
             // 2
             //string answer = new String(str.Distinct().ToArray());
-            Console.WriteLine(DistinctMostDuplicateChar(str));
-            
+            Console.WriteLine(DistinctMostDuplicateChar("aaaasssssssddddddffffssdddddddddddsssaaaaaaa"));
+            Console.WriteLine(DistinctMostDuplicateChar("aab"));
+            Console.WriteLine(DistinctMostDuplicateChar("abb"));
+            Console.WriteLine(DistinctMostDuplicateChar("bab"));
+            Console.WriteLine(DistinctMostDuplicateChar("aba"));
+            Console.WriteLine(DistinctMostDuplicateChar("a"));
+            Console.WriteLine(DistinctMostDuplicateChar(""));
+            Console.WriteLine("");
             // 3
-            Console.WriteLine(DictionaryMostDuplicateChar(str)); 
+            Console.WriteLine(DictionaryMostDuplicateChar("aaaasssssssddddddffffssdddddddddddsssaaaaaaa"));
+            Console.WriteLine(DictionaryMostDuplicateChar("aab"));
+            Console.WriteLine(DictionaryMostDuplicateChar("abb"));
+            Console.WriteLine(DictionaryMostDuplicateChar("bab"));
+            Console.WriteLine(DictionaryMostDuplicateChar("aba"));
+            Console.WriteLine(DictionaryMostDuplicateChar("a"));
+            Console.WriteLine(DictionaryMostDuplicateChar(""));
         }
 
         // решение 1 - сложность: n в квадрате   0(Н2)
@@ -111,7 +127,7 @@ namespace YAP_FindMostDuplicateCharacter
             
             foreach (var keyValuePair in letters)
             {
-                if (keyValuePair.Value > letterCount)
+                if (keyValuePair.Value >= letterCount) // чтобы при тестах учитывалась строка из 1 чара >=
                 {
                     letterCount = keyValuePair.Value;
                     letter = keyValuePair.Key;
