@@ -78,9 +78,10 @@ namespace AbbreviateATwoWordName
                 return null;
             }
         }*/
-        
-        
-        
-        
+
+
+        private double a = 1d;
+        private float b = 2f;
+
     }
 }

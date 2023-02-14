@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TidyNumber", "..\TidyNumber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "leetcodeTwoSum", "..\leetcodeTwoSum\leetcodeTwoSum\leetcodeTwoSum.csproj", "{ADD2D2D6-E1FB-46DF-8A2F-EA1A6731E3FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YAP_FindMostDuplicateCharacter", "..\YAP_FindMostDuplicateCharacter\YAP_FindMostDuplicateCharacter.csproj", "{AA9DA0CF-5A46-4FAE-AB30-8E438D7A0B9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{ADD2D2D6-E1FB-46DF-8A2F-EA1A6731E3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADD2D2D6-E1FB-46DF-8A2F-EA1A6731E3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADD2D2D6-E1FB-46DF-8A2F-EA1A6731E3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9DA0CF-5A46-4FAE-AB30-8E438D7A0B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9DA0CF-5A46-4FAE-AB30-8E438D7A0B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9DA0CF-5A46-4FAE-AB30-8E438D7A0B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9DA0CF-5A46-4FAE-AB30-8E438D7A0B9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

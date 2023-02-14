@@ -23,7 +23,28 @@ namespace CountSmileys
         {
             string[] smileys = { ": )", ":D"};
             Console.WriteLine(CountSmileys(smileys));
+            string[] games = {"1:0", "2:0", "3:0", "4:0"};
+            Console.WriteLine(TotalPoints(games));
         }
+        
+        
+        
+            public static int TotalPoints(string[] games) {
+                int points = 0;
+                for (int i = 0; i < games.Length; i++)
+                {
+                    if(games[i][0] > games[i][2]){
+                        points +=3;
+                    }
+         
+                    if(games[i][0] == games[i][2]){
+                        points +=1;
+                    }
+                }
+                return points;
+            }
+        
+        
 
         public static int CountSmileys(string[] smileys)
         {
