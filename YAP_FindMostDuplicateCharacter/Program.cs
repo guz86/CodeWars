@@ -16,27 +16,29 @@ namespace YAP_FindMostDuplicateCharacter
         private static string MostDuplicateChar(string str)
         {
             int symbolCount = 0;
-            int tempSymbol = 0;
-            char symbol = ' ';
+            int tmpLetterCount;
+            string letter = "";
             for (int i = 0; i < str.Length; i++)
             {
+                tmpLetterCount = 0;
+                
                 for (int j = 0; j < str.Length; j++)
                 {
                     if (str[i] == str[j])
                     {
-                        tempSymbol++;
+                        tmpLetterCount++;
                     }
                 }
                 
-                if (symbolCount < tempSymbol)
+                if (tmpLetterCount > symbolCount)
                 {
-                    symbolCount = tempSymbol;
-                    symbol = str[i];
+                    //symbolCount = tempSymbol;
+                    letter = str[i].ToString();
                 }
-                tempSymbol = 0;
             }
 
-            return  $"{symbol} {symbolCount.ToString()}";
+            return letter;
+            //return  $"{symbol} {symbolCount.ToString()}";
         }
     }
 }
