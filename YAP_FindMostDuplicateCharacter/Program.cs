@@ -9,7 +9,7 @@ namespace YAP_FindMostDuplicateCharacter
     {
         static void Main(string[] args)
         {
-            string str = "abababvbvvvvv";
+            string str = "abababvbvvvvv"; 
             Console.WriteLine(MostDuplicateChar(str));
         }
         
@@ -18,7 +18,6 @@ namespace YAP_FindMostDuplicateCharacter
             int symbolCount = 0;
             int tempSymbol = 0;
             char symbol = ' ';
-            string result = "";
             for (int i = 0; i < str.Length; i++)
             {
                 for (int j = 0; j < str.Length; j++)
@@ -34,11 +33,10 @@ namespace YAP_FindMostDuplicateCharacter
                     symbolCount = tempSymbol;
                     symbol = str[i];
                 }
-                
                 tempSymbol = 0;
             }
 
-            return result = symbolCount.ToString() + " " + symbol;
+            return  $"{symbol} {symbolCount.ToString()}";
         }
     }
 }
