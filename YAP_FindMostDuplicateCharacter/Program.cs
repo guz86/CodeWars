@@ -106,7 +106,7 @@ namespace YAP_FindMostDuplicateCharacter
             }
 
             //var letter = (from d in letters select d.Key).Max();
-            var letter = ' ';
+            char letter = ' '; // char в C# - это value type, он не может иметь пустое значение,
             var letterCount = 0;
             
             foreach (var keyValuePair in letters)
