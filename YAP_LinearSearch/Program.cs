@@ -55,6 +55,10 @@ namespace YAP_LinearSearch
             Console.WriteLine($"Индекс элемента со значением 1 равен {Array.IndexOf(arr, 1)}");
             Console.WriteLine($"Минимальный элемент массива: индекс {Array.IndexOf( arr, arr.Min())}");
             Console.WriteLine($"Максимальный элемент массива: индекс {Array.IndexOf( arr, arr.Max())}");
+            
+             
+            Console.WriteLine("TwoMaxLinearSearch");
+            TwoMaxLinearSearch(Sequence("3214")); // [4,3]
         }
 
         private static int[] Sequence(string elements)
@@ -114,8 +118,9 @@ namespace YAP_LinearSearch
          
             for (int i = 1; i < elements.Length; i++)
             {
-                if (elements[i].CompareTo(result) < 0) 
+                if (elements[i].CompareTo(result) < 0)  // if elements[i] > result
                     result = elements[i];  // 0 -1 1 расположен ли данный экземпляр перед, после или на той же позиции в порядке сортировки
+                // лучше сохранять индекс при проверке result = i и в конце выводить элемент с нужным индексом, вместо перезаписывания переменной
             }
 
             return result;
@@ -133,6 +138,31 @@ namespace YAP_LinearSearch
             }
 
             return result;
+        }
+        
+        
+        // найти максимальное число в последовательности и второе по величине число (которое будет максимальным если вычеркнуть ОДНО первое)
+        // 3 2 1 3  гарантированно минимум 2 элемента в последовательности
+        
+        private static int[] TwoMaxLinearSearch(int[] elements)
+        {
+            int max1 = elements[1] > elements[0] ? elements[1] : elements[0];   // b > a ? b : a;
+            int max2 = elements[1] < elements[0] ? elements[1] : elements[0];
+            
+            for (int i = 2; i < elements.Length; i++)
+            {
+                if (elements[i] > max1)
+                {
+                    max2 = max1;
+                    max1 = elements[i];
+                }
+                else if (elements[i] > max2)
+                {
+                    max2 = elements[i];
+                }
+            }
+
+            return new[] {max1, max2};
         }
     }
 }
