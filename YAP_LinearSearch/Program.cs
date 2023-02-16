@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace YAP_LinearSearch
 {
@@ -74,7 +75,13 @@ namespace YAP_LinearSearch
             string[] stringArr = {"a", "bb", "vvv", "a", "d", "ss", "qq", "q"};
             Console.WriteLine(ShortWordsLinearSearch(stringArr));
             
-                
+            Console.WriteLine("RLELinearSearch");
+            string stringAZ = "AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB";
+            Console.WriteLine(RLELinearSearch(stringAZ));
+            Console.WriteLine(RLELinearSearch(""));
+            Console.WriteLine(RLELinearSearch("AAAABBBя"));
+            Console.WriteLine(RLELinearSearch("AAAABBBz"));
+            
         }
 
         private static int[] Sequence(string elements)
@@ -224,9 +231,59 @@ namespace YAP_LinearSearch
             return String.Join((" "), shortWords.ToArray());
         }        
         
-        
-        
-        
-        
+        // RLE способ сжатия АААА в А4
+         /*
+          Дана строка, состоящая из букв A-Z:
+          "AAAABBBCCXYZDDDDEEEFFFAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+          Нужно написать функцию RLE, которая на выходе даст строку вида:
+          "A4B3C2XYZD4E3F3A6B28"
+          И сгенерирует любую ошибку, если на вход пришла невалидная строка.
+         
+          Пояснение:
+          1. если символ встречается 1 раз, он остается без изменений
+          2. если символ повторяется более 1 раза, к нему добавляется количество повторений
+         */
+         
+         // - Оставить уникальные буквы, посчитать их количество
+         
+         private static string RLELinearSearch(string stringAZ)
+         {
+             if(stringAZ.Length == 0) {
+                 return "пустая строка";
+             }
+             
+             if (!Regex.IsMatch(stringAZ, "^[A-Z0-9]*$")) {
+                 return "невалидная строка";
+             }
+             
+             // if (!stringAZ.All(char.IsLetterOrDigit)) {
+             //     return "невалидная строка";
+             // }
+             
+             // if (!stringAZ.All(c => (c >= 48 && c <= 57 || c >= 97 && c <= 122))) {
+             //     return "невалидная строка";
+             // }
+             
+             string lastChar = stringAZ[0].ToString();
+
+             List<string> singleChars = new List<string>(); 
+             
+             int lastPos = 0;
+             for (int i = 0; i < stringAZ.Length; i++)
+             {
+                 if (stringAZ[i].ToString() != lastChar)
+                 {
+                     string count = (i - lastPos) > 1 ? (i - lastPos).ToString() : "";
+                     
+                     singleChars.Add(lastChar + count);
+                     lastPos = i;
+                     lastChar = stringAZ[i].ToString();
+                 }
+             }
+             singleChars.Add(lastChar + (stringAZ.Length  - lastPos));
+             
+             //return String.Join((""), singleChars.ToArray());
+             return String.Concat(singleChars);
+         }      
     }
 }
