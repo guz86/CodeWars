@@ -23,9 +23,24 @@ namespace YAP_LinearSearch
             Console.WriteLine(ReLinearSearch(Sequence("133f"), 2));
             Console.WriteLine(ReLinearSearch(Sequence("2"), 2));
             Console.WriteLine(ReLinearSearch(Sequence(""), 2));
-            
+                        
+            Console.WriteLine("EqualsLinearSearch");
+            Console.WriteLine(EqualsLinearSearch(Sequence("121"), 2));
+            Console.WriteLine(EqualsLinearSearch(Sequence("213"), 2));
+            Console.WriteLine(EqualsLinearSearch(Sequence("132"), 2));
+            Console.WriteLine(EqualsLinearSearch(Sequence("133f"), 2));
+            Console.WriteLine(EqualsLinearSearch(Sequence("2"), 2));
+            Console.WriteLine(EqualsLinearSearch(Sequence(""), 2));
+
+            Console.WriteLine("MinLinearSearch");
+            Console.WriteLine(MinLinearSearch(Sequence("1221"), 2));
+            Console.WriteLine(MinLinearSearch(Sequence("213"), 2));
+            Console.WriteLine(MinLinearSearch(Sequence("1322"), 2));
+            Console.WriteLine(MinLinearSearch(Sequence("133f"), 2));
+            Console.WriteLine(MinLinearSearch(Sequence("22"), 2));
+            Console.WriteLine(MinLinearSearch(Sequence(""), 2));
+
             Console.WriteLine("LastLinearSearch");
-            
             Console.WriteLine(LastLinearSearch(Sequence("1221"), 2));
             Console.WriteLine(LastLinearSearch(Sequence("213"), 2));
             Console.WriteLine(LastLinearSearch(Sequence("1322"), 2));
@@ -45,7 +60,7 @@ namespace YAP_LinearSearch
             return arr;
         }
 
-        // найти первое левое вхождение положительного числа Х или вывести -1
+        // найти позицию - первое левое вхождение положительного числа Х или вывести -1
         // 1
         private static int LinearSearch(int[] elements, int element)
         {
@@ -58,7 +73,7 @@ namespace YAP_LinearSearch
             return result;
         }
         
-        // 2 c последнего элемента
+        // 2 позицию - c последнего элемента
         private static int ReLinearSearch(int[] elements, int element)
         {
             int result = -1;
@@ -69,6 +84,32 @@ namespace YAP_LinearSearch
 
             return result;
         }
+        
+        // 3 позицию - по значению c последнего элемента
+        private static int EqualsLinearSearch(int[] elements, int element)
+        {
+            int result = -1;
+            for (int i = elements.Length - 1; i >= 0; i--)
+            {
+                if (elements[i].Equals(element)) result = i;
+            }
+
+            return result;
+        }
+        
+        // найти минимальное значения массива
+        private static int MinLinearSearch(int[] elements, int element)
+        {
+            int result = elements[0];
+            for (int i = 1; i < elements.Length; i++)
+            {
+                if (elements[i].CompareTo(result) < 0) 
+                    result = elements[i];  // 0 -1 1 расположен ли данный экземпляр перед, после или на той же позиции в порядке сортировки
+            }
+
+            return result;
+        }
+
         
         
         // найти последнее правое вхождение положительного числа Х или вывести -1
