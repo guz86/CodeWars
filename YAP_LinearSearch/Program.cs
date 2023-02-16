@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace YAP_LinearSearch
@@ -68,6 +69,12 @@ namespace YAP_LinearSearch
             Console.WriteLine(MinEvenLinearSearch(Sequence("44")));
             Console.WriteLine(MinEvenLinearSearch(Sequence("1")));
             Console.WriteLine(MinEvenLinearSearch(Sequence("")));
+            
+            Console.WriteLine("ShortWordsLinearSearch");
+            string[] stringArr = {"a", "bb", "vvv", "a", "d", "ss", "qq", "q"};
+            Console.WriteLine(ShortWordsLinearSearch(stringArr));
+            
+                
         }
 
         private static int[] Sequence(string elements)
@@ -191,5 +198,35 @@ namespace YAP_LinearSearch
             }
             return result;
         }
+        
+        
+        // Дана последовательность слов. Вывести все самые короткие слова через пробел
+        // требуется двойной проход, чтобы это было быстрее (1. поиск минимальной длины, 2. собираем строку)
+        // не нужно пересоздавать каждый раз новую строку, поэтому нужно собирать список а потом из списка делать строку
+        // "a", "bb", "vvv", "a", "d", "ss", "qq", "q"
+        
+        private static string ShortWordsLinearSearch(string[] words)
+        {
+            int minLen = words[0].Length;
+
+            foreach (var word in words)
+            {
+                if (word.Length < minLen) minLen = word.Length;
+            }
+
+            List<string> shortWords = new List<string>(); 
+
+            foreach (var word in words)
+            {
+                if (word.Length == minLen) shortWords.Add(word);
+            }
+
+            return String.Join((" "), shortWords.ToArray());
+        }        
+        
+        
+        
+        
+        
     }
 }
