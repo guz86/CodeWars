@@ -59,6 +59,15 @@ namespace YAP_LinearSearch
              
             Console.WriteLine("TwoMaxLinearSearch");
             TwoMaxLinearSearch(Sequence("3214")); // [4,3]
+            
+            Console.WriteLine("MinEvenLinearSearch");
+            Console.WriteLine(MinEvenLinearSearch(Sequence("124")));
+            Console.WriteLine(MinEvenLinearSearch(Sequence("214")));
+            Console.WriteLine(MinEvenLinearSearch(Sequence("432")));
+            Console.WriteLine(MinEvenLinearSearch(Sequence("133f"))); // 0 из за символа f
+            Console.WriteLine(MinEvenLinearSearch(Sequence("44")));
+            Console.WriteLine(MinEvenLinearSearch(Sequence("1")));
+            Console.WriteLine(MinEvenLinearSearch(Sequence("")));
         }
 
         private static int[] Sequence(string elements)
@@ -163,6 +172,24 @@ namespace YAP_LinearSearch
             }
 
             return new[] {max1, max2};
+        }
+        
+        // Найти минимальное четное число в последовательности или вывести -1, если такого не существует
+        
+        private static int MinEvenLinearSearch(int[] elements)
+        {
+            int result = -1;
+            bool even = false;
+            
+            for (int i = 0; i < elements.Length; i++)
+            {
+                if (elements[i] % 2 == 0 & (!even || elements[i] < result))
+                {
+                    result = elements[i];
+                    even = true;
+                }
+            }
+            return result;
         }
     }
 }
