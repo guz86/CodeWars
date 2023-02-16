@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace YAP_LinearSearch
 {
@@ -47,6 +48,13 @@ namespace YAP_LinearSearch
             Console.WriteLine(LastLinearSearch(Sequence("133f"), 2));
             Console.WriteLine(LastLinearSearch(Sequence("22"), 2));
             Console.WriteLine(LastLinearSearch(Sequence(""), 2));
+            
+            // реализация методов в шапе
+            Console.WriteLine("реализация методов arr 3212");
+            int[] arr = Sequence("3212");
+            Console.WriteLine($"Индекс элемента со значением 1 равен {Array.IndexOf(arr, 1)}");
+            Console.WriteLine($"Минимальный элемент массива: индекс {Array.IndexOf( arr, arr.Min())}");
+            Console.WriteLine($"Максимальный элемент массива: индекс {Array.IndexOf( arr, arr.Max())}");
         }
 
         private static int[] Sequence(string elements)
@@ -100,7 +108,10 @@ namespace YAP_LinearSearch
         // найти минимальное значения массива
         private static int MinLinearSearch(int[] elements, int element)
         {
-            int result = elements[0];
+            int result = - 1; 
+            
+            if (elements.Length > 0) result = elements[0]; 
+         
             for (int i = 1; i < elements.Length; i++)
             {
                 if (elements[i].CompareTo(result) < 0) 
