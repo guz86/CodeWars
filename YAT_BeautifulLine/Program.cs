@@ -5,6 +5,11 @@ namespace YAT_BeautifulLine
 {
     class Program
     {
+        
+        // Красотой строки назовем максимальное число идущих подряд одинаковых букв. (красота строки abcaabdddettq равна 3)
+        //
+        // Сделайте данную вам строку как можно более красивой, если вы можете сделать не более k операций замены символа.
+        
         static void Main(string[] args)
         {
             //int.TryParse(Console.ReadLine(), out int count);
